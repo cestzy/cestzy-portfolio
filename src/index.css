@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-[#111111] dark:text-white transition-colors duration-150;
+  }
+  
+  html.dark body {
+    @apply bg-[#111111] text-gray-300;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, span, a, li, button, svg {
+    @apply transition-colors duration-150;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+/* Light Mode: Black Thumb */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 9999px;
+  border: 2px solid #ffffff; /* Creates inset gap around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Dark Mode: White Thumb */
+html.dark ::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 9999px;
+  border: 2px solid #111111; /* Creates inset gap around thumb */
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #e5e5e5;
+}
+
+/* Firefox Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff;
+}
+
+html.dark * {
+  scrollbar-color: #ffffff #111111;
+}
+
+
+:root {
+  --pulse-border: rgba(0, 0, 0, 0.08);
+  --pulse-bg: rgba(0, 0, 0, 0.012);
+}
+
+html.dark {
+  --pulse-border: rgba(255, 255, 255, 0.08);
+  --pulse-bg: rgba(255, 255, 255, 0.012);
+}
+
+.pulse-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+/* Expanding Ripple Rings */
+.pulse-container span {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+
+  /* Crisp 1px border */
+  border: 1px solid var(--pulse-border);
+  background: var(--pulse-bg);
+
+  /* Vector crispness on hardware acceleration */
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+
+  /* Smooth 6-second expansion loop */
+  animation: naturalPulse 6s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  animation-delay: calc(1s * var(--i));
+}
+
+@keyframes naturalPulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  15% {
+    /* Gradual fade-in as ring emerges */
+    opacity: 0.55;
+  }
+  65% {
+    /* Soft dissipation */
+    opacity: 0.2;
+  }
+  100% {
+    /* Expands out smoothly and vanishes */
+    transform: scale(4.5);
+    opacity: 0;
+  }
+}
