@@ -1,9 +1,6 @@
 import React from 'react';
 import { techCardsItems } from '@/lib/constants';
 
-// ==========================================
-// SKILLS COMPONENT
-// ==========================================
 const Skills = () => {
   return (
     <div id='skills' name='skills' className='w-full min-h-screen py-20 bg-transparent text-neutral-900 dark:text-neutral-300'>

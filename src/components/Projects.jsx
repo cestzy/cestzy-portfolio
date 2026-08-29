@@ -3,9 +3,11 @@ import { portfolioProjects } from '@/lib/constants';
 import { HiExternalLink, HiX } from 'react-icons/hi';
 import { FaGithub } from 'react-icons/fa';
 
-// ==========================================
-// PROJECTS COMPONENT
-// ==========================================
+// ASSET IMPORTS FOR VERCEL PRODUCTION BUNDLING
+import screen1 from '../assets/screen-1.svg';
+import screen2 from '../assets/screen-2.svg';
+import screen3 from '../assets/screen-3.svg';
+
 const Projects = () => {
   // State to manage the active modal for project screenshots
   const [activeModalProject, setActiveModalProject] = useState(null);
@@ -67,7 +69,7 @@ const Projects = () => {
 
                   {/* PROJECT IMAGE */}
                   <img 
-                    src="/src/assets/screen-1.svg" 
+                    src={screen1} 
                     alt={`${project.heading} preview`} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -108,9 +110,6 @@ const Projects = () => {
 
       </div>
 
-      {/* ========================================== */}
-      {/* SCREENSHOT LIGHTBOX / MINISCREEN MODAL */}
-      {/* ========================================== */}
       {activeModalProject && (
         <div 
           onClick={() => setActiveModalProject(null)}
@@ -141,13 +140,13 @@ const Projects = () => {
             {/* SCROLLABLE SCREENSHOT CONTAINER */}
             <div className="py-6 space-y-6 overflow-y-auto max-h-[60vh] pr-2">
               <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
-                <img src="/src/assets/screen-1.svg" alt="Screenshot 1" className="w-full object-cover" />
+                <img src={screen1} alt="Screenshot 1" className="w-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
-                <img src="/src/assets/screen-2.svg" alt="Screenshot 2" className="w-full object-cover" />
+                <img src={screen2} alt="Screenshot 2" className="w-full object-cover" />
               </div>
               <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
-                <img src="/src/assets/screen-3.svg" alt="Screenshot 3" className="w-full object-cover" />
+                <img src={screen3} alt="Screenshot 3" className="w-full object-cover" />
               </div>
             </div>
 
