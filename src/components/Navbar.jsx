@@ -55,11 +55,11 @@ const Navbar = ({ darkMode, toggleTheme }) => {
             aria-label="Toggle Theme"
             className={`relative group flex items-center justify-center w-10 h-10 rounded-full border transition-all duration-300 cursor-pointer overflow-hidden ${darkMode ? 'border-gray-700 bg-[#1c1c1e] hover:border-pink-500' : 'border-gray-300 bg-gray-100 hover:border-pink-500'}`}
           >
-            <span className='absolute inset-0 bg-pink-500/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-out'></span>
+            <span className='absolute inset-0 bg-pink-600 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-out'></span>
             <img 
               src={darkMode ? LightLogo : DarkLogo} 
               alt="Theme Toggle Icon" 
-              className='w-5 h-5 relative z-10 transition-transform duration-300 group-hover:rotate-45' 
+              className='w-5 h-5 relative z-10 transition-colors transition-transform duration-300 group-hover:rotate-45' 
             />
           </button>
         </div>

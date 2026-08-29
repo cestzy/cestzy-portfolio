@@ -86,7 +86,7 @@ const Home = ({ darkMode = true }) => {
             
             {/* View Work Button */}
             <Link to='work' smooth={true} duration={500}>
-              <button className='text-gray-900 dark:text-white group border-2 border-gray-300 dark:border-gray-700 hover:border-pink-600 dark:hover:border-pink-600 hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 px-6 py-3 flex items-center gap-2 rounded-full hover:scale-105 cursor-pointer transition-all duration-150'>
+              <button className='text-gray-900 dark:text-white group border-3 border-gray dark:border-gray-700 hover:border-pink-600 dark:hover:border-pink-600 hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 px-6 py-3 flex items-center gap-2 rounded-full hover:scale-105 cursor-pointer transition-all duration-150'>
                 <span>View Work</span>
                 <HiArrowNarrowRight className='group-hover:rotate-90 transition-transform duration-300' />
               </button>
@@ -96,7 +96,7 @@ const Home = ({ darkMode = true }) => {
             <a 
               href="/src/assets/data/CV_TAGGUEG_v1.pdf" 
               download="CV_TAGGUEG_v1.pdf"
-              className='text-gray-900 dark:text-white group border-2 border-gray-300 dark:border-gray-700 hover:border-pink-600 dark:hover:border-pink-600 hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 px-6 py-3 flex items-center gap-2 rounded-full hover:scale-105 cursor-pointer transition-all duration-150'
+              className='text-gray-900 dark:text-white group border-3 border-gray dark:border-gray-700 hover:border-pink-600 dark:hover:border-pink-600 hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 px-6 py-3 flex items-center gap-2 rounded-full hover:scale-105 cursor-pointer transition-all duration-150'
             >
               <span>Resume</span>
               <HiDownload size={16} />

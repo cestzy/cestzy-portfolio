@@ -22,19 +22,19 @@ const Skills = () => {
           {techCardsItems.map((tech, index) => (
             <div 
               key={index} 
-              className={`group flex items-center p-3 rounded-2xl bg-white/80 dark:bg-[#212224] border border-neutral-200/80 dark:border-neutral-800/80 hover:border-pink-500/60 dark:hover:border-pink-500/60 hover:bg-white dark:hover:bg-[#28292c] hover:shadow-[0_4px_20px_rgba(236,72,153,0.15)] hover:scale-[1.03] transition-all duration-300 cursor-pointer backdrop-blur-md ${tech.bgColor || ''}`}
+              className={`group flex items-center p-3 rounded-2xl bg-[#ebdde0] dark:bg-[#212224] border border-neutral-200/80 dark:border-neutral-800/80 hover:bg-white dark:hover:bg-[#28292c] hover:shadow-[0_4px_20px_rgba(236,72,153,0.15)] hover:scale-[1.03] transition-all duration-300 cursor-pointer backdrop-blur-md ${tech.bgColor || ''}`}
             >
               {/* ICON CONTAINER */}
-              <div className='w-11 h-11 flex-shrink-0 flex items-center justify-center p-2 mr-3.5 rounded-xl bg-neutral-100 dark:bg-[#3f3f40] border border-neutral-200/60 dark:border-neutral-700/50 shadow-sm'>
+              <div className='w-11 h-11 flex-shrink-0 flex items-center justify-center p-2 mr-3.5 rounded-xl bg-white dark:bg-[#3f3f40] border border-neutral-200/60 dark:border-neutral-700/50 shadow-sm hover:bg-white-600'>
                 <img className='w-7 h-7 object-contain transition-transform duration-300 group-hover:scale-110' src={tech.imageUrl} alt={`${tech.name} icon`} />
               </div>
 
               {/* TECH INFO */}
               <div className='flex flex-col'>
-                <span className='font-bold text-neutral-900 dark:text-white text-sm group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors duration-150'>
+                <span className='font-bold text-neutral-900 dark:text-white text-sm group-hover:text-pink-600 dark:group-hover:text-white transition-colors duration-150'>
                   {tech.name}
                 </span>
-                <span className='text-xs text-neutral-500 dark:text-neutral-400 font-medium'>
+                <span className='text-xs text-neutral-500 dark:text-neutral-400 font-medium group-hover:text-black dark:group-hover:text-pink-400'>
                   {tech.description}
                 </span>
               </div>

@@ -20,8 +20,8 @@ const About = () => {
           <div className='sm:text-right text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white transition-colors duration-150'>
             <p>Hi. I'm Cestzyrus Taggueg, a 23-year-old web developer based in the Philippines</p>
           </div>
-          <div className='sm:text-left text-xl sm:text-2xl font-medium text-gray-500 dark:text-gray-400 leading-snug transition-colors duration-150'>
-            <p>My main focus is crafting digital experiences and building adaptive full-stack web applications</p>  
+          <div className='sm:text-left text-2xl sm:text-2xl font-bold text-gray-500 dark:text-gray-400 leading-snug transition-colors duration-150'>
+            <p>My main focus is in improving digital experiences and building adaptive full-stack web applications</p>  
           </div>
         </div>
 

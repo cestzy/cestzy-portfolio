@@ -21,7 +21,7 @@ function App() {
   const toggleTheme = () => setDarkMode(!darkMode);
 
   return (
-    <div className={`w-full min-h-screen relative overflow-hidden transition-colors duration-300 ${darkMode ? 'bg-[#111111] text-gray-300' : 'bg-white text-gray-800'}`}>
+    <div className={`w-full min-h-screen relative overflow-hidden transition-colors duration-300 ${darkMode ? 'bg-[#111111] text-gray-300' : 'bg-[#ffedf1] text-gray-800'}`}>
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0">
         <div className="pulse-container">
           <div className="core" />
