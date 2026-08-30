@@ -1,4 +1,3 @@
-// Import logo assets so Vite bundles them for production
 import figmaLogo from '@/assets/logos/figma.svg';
 import javascriptLogo from '@/assets/logos/javascript.svg';
 import reactLogo from '@/assets/logos/react.svg';
@@ -67,7 +66,6 @@ export const portfolioProjects = [
     description:
       "A dedicated web application tailored for osu! players to create, track, and complete personal gameplay goals. Stay motivated, monitor your progress, and crush your targets one rank at a time.",
     imageUrl: "/imgs/projects/portolio-proj1.png",
-    // Add multiple screenshots for the mini-screen showcase modal:
     screenshots: [
       "/src/assets/screen-1.svg",
       "/src/assets/screen-2.svg",
