@@ -1,9 +1,6 @@
 import React from 'react';
 import { HiExternalLink } from 'react-icons/hi';
 
-// ==========================================
-// WORK / EXPERIENCE COMPONENT
-// ==========================================
 const Work = () => {
   return (
     <div id="work" className="w-full min-h-[70vh] py-20 bg-transparent text-neutral-900 dark:text-white">
@@ -25,8 +22,6 @@ const Work = () => {
         <div className="space-y-6">
           
           <div className="group bg-white/90 dark:bg-black/90 backdrop-blur-md p-6 sm:p-8 rounded-[2rem] border-2 border-neutral-900/10 dark:border-white/20 hover:border-pink-500/60 dark:hover:border-pink-500/60 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl">
-            
-            {/* ROLE & METADATA HEADER */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-5 border-b border-neutral-200 dark:border-neutral-800">
               <div>
                 <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white group-hover:text-pink-600 dark:group-hover:text-pink-500 transition-colors duration-150">

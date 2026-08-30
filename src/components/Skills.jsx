@@ -4,7 +4,6 @@ import { techCardsItems } from '@/lib/constants';
 const Skills = () => {
   return (
     <div id='skills' name='skills' className='w-full min-h-screen py-20 bg-transparent text-neutral-900 dark:text-neutral-300'>
-      {/* Container */}
       <div className='max-w-5xl mx-auto px-6 sm:px-8 flex flex-col justify-center w-full h-full'>
         
         {/* SECTION HEADER */}

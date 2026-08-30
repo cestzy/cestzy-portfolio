@@ -4,8 +4,6 @@ const About = () => {
   return (
     <div id='about' name='about' className='max-w-5xl mx-auto w-full min-h-screen py-20 flex flex-col justify-center'>
       <div className='flex flex-col justify-center items-center w-full h-full'>
-        
-        {/* SECTION TITLE */}
         <div className='w-full grid grid-cols-2 gap-8 px-4 mb-8'>
           <div className='sm:text-right pl-4'>
             <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-900 dark:text-white transition-colors duration-150'>
@@ -15,7 +13,6 @@ const About = () => {
           <div></div>
         </div>
 
-        {/* CONTENT GRID */}
         <div className='w-full grid sm:grid-cols-2 gap-8 px-4 items-baseline'>
           <div className='sm:text-right text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white transition-colors duration-150'>
             <p>Hi. I'm Cestzyrus Taggueg, a 23-year-old web developer based in the Philippines</p>

@@ -48,14 +48,13 @@ html.dark ::-webkit-scrollbar-track {
 html.dark ::-webkit-scrollbar-thumb {
   background: #ffffff;
   border-radius: 9999px;
-  border: 2px solid #111111; /* Creates inset gap around thumb */
+  border: 2px solid #111111;
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
   background: #e5e5e5;
 }
 
-/* Firefox Support */
 * {
   scrollbar-width: thin;
   scrollbar-color: #000000 #ffffff;
@@ -86,21 +85,17 @@ html.dark {
   pointer-events: none;
 }
 
-/* Expanding Ripple Rings */
 .pulse-container span {
   position: absolute;
   inset: 0;
   border-radius: 50%;
 
-  /* Crisp 1px border */
   border: 1px solid var(--pulse-border);
   background: var(--pulse-bg);
 
-  /* Vector crispness on hardware acceleration */
   backface-visibility: hidden;
   will-change: transform, opacity;
 
-  /* Smooth 6-second expansion loop */
   animation: naturalPulse 6s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
   animation-delay: calc(1s * var(--i));
 }
@@ -111,15 +106,12 @@ html.dark {
     opacity: 0;
   }
   15% {
-    /* Gradual fade-in as ring emerges */
     opacity: 0.55;
   }
   65% {
-    /* Soft dissipation */
     opacity: 0.2;
   }
   100% {
-    /* Expands out smoothly and vanishes */
     transform: scale(4.5);
     opacity: 0;
   }

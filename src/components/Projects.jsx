@@ -3,13 +3,11 @@ import { portfolioProjects } from '@/lib/constants';
 import { HiExternalLink, HiX } from 'react-icons/hi';
 import { FaGithub } from 'react-icons/fa';
 
-// ASSET IMPORTS FOR VERCEL PRODUCTION BUNDLING
 import screen1 from '../assets/screen-1.svg';
 import screen2 from '../assets/screen-2.svg';
 import screen3 from '../assets/screen-3.svg';
 
 const Projects = () => {
-  // State to manage the active modal for project screenshots
   const [activeModalProject, setActiveModalProject] = useState(null);
 
   return (

@@ -2,7 +2,6 @@ import React from 'react';
 import { HiArrowNarrowRight, HiDownload } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 
-// Import single white SVG assets
 import LocationIcon from '../assets/logos/location.svg';
 import EmailIcon from '../assets/logos/email.svg';
 import GithubIcon from '../assets/logos/github.svg';
@@ -11,16 +10,12 @@ import LinkedinIcon from '../assets/logos/linkedin.svg';
 const Home = ({ darkMode = true }) => {
   return (
     <div id='home' name='home' className='w-full min-h-screen flex flex-col justify-center'>
-      
-      {/* Container - [-mt-12 sm:-mt-20] pulls the hero section slightly higher up */}
       <div className='max-w-5xl mx-auto px-6 sm:px-8 flex flex-col justify-center h-full -mt-12 sm:-mt-20'>
         
-        {/* Name */}
         <h1 className='text-4xl sm:text-7xl font-bold text-gray-900 dark:text-white transition-colors duration-150'>
           Cestzyrus Taggueg
         </h1>
 
-        {/* Location with icon, dot separator, and freelance status */}
         <div className='flex items-center gap-2 pt-5 text-gray-600 dark:text-gray-400 text-sm sm:text-base transition-colors duration-150'>
           <img 
             src={LocationIcon} 
@@ -32,16 +27,12 @@ const Home = ({ darkMode = true }) => {
           <span className='italic'>BS Computer Science, Isabela State University</span>
         </div>
 
-        {/* Full-Stack Web Developer Title */}
         <h2 className='text-lg sm:text-2xl font-bold text-gray-700 dark:text-gray-300 tracking-wide transition-colors duration-150'>
           FULL-STACK WEB DEVELOPER
         </h2>
         <span className='italic'>Open for work</span>
 
-        {/* Social Icons & Action Buttons Section */}
         <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pt-2 max-w-[700px]'>
-          
-          {/* Social Icons Group (Email, LinkedIn, GitHub) */}
           <div className='flex items-center gap-5'>
             <a 
               href='mailto:cestzyruss@gmail.com' 
@@ -83,7 +74,6 @@ const Home = ({ darkMode = true }) => {
             
           </div>
 
-          {/* Action Buttons: View Work & Side-by-Side Resume Button */}
           <div className='flex items-center gap-4'>
             
             {/* View Work Button */}

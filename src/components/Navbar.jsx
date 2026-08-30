@@ -9,8 +9,6 @@ const Navbar = ({ darkMode, toggleTheme }) => {
   const [fade, setFade] = useState(true);
 
   const brandTexts = ["cestzyrus", "@cestzy"];
-
-  // Rotating brand text effect
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(false);
@@ -27,7 +25,6 @@ const Navbar = ({ darkMode, toggleTheme }) => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full h-[80px] z-50 backdrop-blur-md transition-colors duration-300 ${darkMode ? 'bg-[#111111]/85 text-gray-300 border-b border-gray-800/50' : 'bg-white/85 text-gray-800 border-b border-gray-200/80'}`}>
-      {/* Centered Inner Container */}
       <div className="max-w-5xl mx-auto h-full flex justify-between items-center px-6 sm:px-8">
         
         {/* BRAND / ROTATING LOGO */}

@@ -9,7 +9,6 @@ import Work from './components/Work';
 function App() {
   const [darkMode, setDarkMode] = useState(true);
 
-  // Sync dark class for Tailwind
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
