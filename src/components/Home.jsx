@@ -13,7 +13,7 @@ const Home = ({ darkMode = true }) => {
     <div id='home' name='home' className='w-full min-h-screen flex flex-col justify-center'>
       
       {/* Container - [-mt-12 sm:-mt-20] pulls the hero section slightly higher up */}
-      <div className='max-w-5xl mx-auto px-6 sm:px-8 flex flex-col justify-center w-full h-full -mt-12 sm:-mt-20'>
+      <div className='max-w-5xl mx-auto px-6 sm:px-8 flex flex-col justify-center h-full -mt-12 sm:-mt-20'>
         
         {/* Name */}
         <h1 className='text-4xl sm:text-7xl font-bold text-gray-900 dark:text-white transition-colors duration-150'>
@@ -21,7 +21,7 @@ const Home = ({ darkMode = true }) => {
         </h1>
 
         {/* Location with icon, dot separator, and freelance status */}
-        <div className='flex items-center gap-2 pt-3 text-gray-600 dark:text-gray-400 text-sm sm:text-base transition-colors duration-150'>
+        <div className='flex items-center gap-2 pt-5 text-gray-600 dark:text-gray-400 text-sm sm:text-base transition-colors duration-150'>
           <img 
             src={LocationIcon} 
             alt='Location' 
@@ -29,13 +29,14 @@ const Home = ({ darkMode = true }) => {
           />
           <span>Philippines</span>
           <span className='text-gray-400 dark:text-gray-600'>•</span>
-          <span className='italic'>Open for work</span>
+          <span className='italic'>BS Computer Science, Isabela State University</span>
         </div>
 
         {/* Full-Stack Web Developer Title */}
-        <h2 className='pt-3 text-lg sm:text-2xl font-bold text-gray-700 dark:text-gray-300 tracking-wide transition-colors duration-150'>
+        <h2 className='text-lg sm:text-2xl font-bold text-gray-700 dark:text-gray-300 tracking-wide transition-colors duration-150'>
           FULL-STACK WEB DEVELOPER
         </h2>
+        <span className='italic'>Open for work</span>
 
         {/* Social Icons & Action Buttons Section */}
         <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pt-2 max-w-[700px]'>
@@ -79,6 +80,7 @@ const Home = ({ darkMode = true }) => {
                 className={`w-6 h-6 object-contain transition-all ${darkMode ? 'brightness-0 invert' : 'brightness-0'}`} 
               />
             </a>
+            
           </div>
 
           {/* Action Buttons: View Work & Side-by-Side Resume Button */}

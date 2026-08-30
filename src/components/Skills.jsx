@@ -10,10 +10,10 @@ const Skills = () => {
         {/* SECTION HEADER */}
         <div className='mb-10'>
           <h2 className='text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mb-3 inline-block border-b-4 border-pink-600 pb-1'>
-            My most used technologies
+            Technologies
           </h2>
-          <p className='text-sm text-neutral-600 dark:text-neutral-400 mt-2'>
-            Tools, frameworks, and languages I work with regularly
+          <p className='text-sm text-neutral-600 dark:text-neutral-400 mt-2 font-medium'>
+            Tools, Frameworks, and Languages I work with regularly
           </p>
         </div>
 

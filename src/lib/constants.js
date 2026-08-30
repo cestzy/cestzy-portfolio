@@ -62,7 +62,7 @@ export const techCardsItems = [
 export const portfolioProjects = [
   {
     id: "osu-goals",
-    heading: "osu! goals",
+    heading: "Osu!Goals",
     subheading: "track and conquer your rhythm game milestones",
     description:
       "A dedicated web application tailored for osu! players to create, track, and complete personal gameplay goals. Stay motivated, monitor your progress, and crush your targets one rank at a time.",

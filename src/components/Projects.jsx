@@ -123,7 +123,7 @@ const Projects = () => {
             <div className="flex justify-between items-center pb-4 border-b border-neutral-200 dark:border-neutral-800">
               <div>
                 <h2 className="text-xl font-bold text-neutral-900 dark:text-white">
-                  {activeModalProject.heading} — Gallery
+                  {activeModalProject.heading}
                 </h2>
                 <p className="text-xs text-neutral-500 dark:text-neutral-400">
                   Scroll to explore application screenshots

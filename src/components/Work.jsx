@@ -16,8 +16,8 @@ const Work = () => {
           <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-neutral-900 dark:text-white transition-colors duration-150">
             Relevant Experience
           </p>
-          <p className="py-3 text-neutral-600 dark:text-neutral-400 text-sm transition-colors duration-150">
-            Experience & Training
+          <p className="py-4 text-neutral-600 dark:text-neutral-400 text-sm transition-colors duration-150">
+            Internship
           </p>
         </div>
 
@@ -48,7 +48,7 @@ const Work = () => {
             {/* DESCRIPTION & ACTION FOOTER */}
             <div className="pt-5 space-y-5">
               <p className="text-neutral-600 dark:text-neutral-300 text-sm leading-relaxed transition-colors duration-150">
-                Completed 447 hours of intensive training under Accenture Academy, focusing on platform development, workflow automation, and custom LWC components.
+                Completed 447 hours of intensive training under Accenture Academy, focusing on platform development, workflow automation, and custom Lightning Web Components (LWC) components.
               </p>
 
               <div className="flex flex-wrap items-center justify-between gap-4 pt-1">
