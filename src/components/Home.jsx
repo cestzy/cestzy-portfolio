@@ -6,7 +6,6 @@ import LocationIcon from '../assets/logos/location.svg';
 import EmailIcon from '../assets/logos/email.svg';
 import GithubIcon from '../assets/logos/github.svg';
 import LinkedinIcon from '../assets/logos/linkedin.svg';
-import ResumeFile from '/src/assets/data/CV_TAGGUEG_v1.pdf';
 
 const Home = ({ darkMode = true }) => {
   return (
@@ -87,7 +86,7 @@ const Home = ({ darkMode = true }) => {
 
             {/* Resume Download Button */}
             <a 
-              href={ResumeFile} 
+              href="/CV_TAGGUEG_v1.pdf" 
               download="CV_TAGGUEG_v1.pdf"
               className='text-gray-900 dark:text-white group border-3 border-gray dark:border-gray-700 hover:border-pink-600 dark:hover:border-pink-600 hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 px-6 py-3 flex items-center gap-2 rounded-full hover:scale-105 cursor-pointer transition-all duration-150'
             >
